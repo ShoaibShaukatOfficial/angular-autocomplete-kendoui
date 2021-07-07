@@ -7,6 +7,7 @@ import {
 @Component({
   selector: 'my-app',
   template: `
+    <h4>Kendo UI Auto Complete with 5K Items</h4>
     <kendo-autocomplete
       #autocomplete
       [data]="data"
