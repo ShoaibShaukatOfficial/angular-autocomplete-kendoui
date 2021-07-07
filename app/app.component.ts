@@ -4,7 +4,6 @@ import { AutoCompleteComponent, VirtualizationSettings } from '@progress/kendo-a
 @Component({
   selector: 'my-app',
   template: `
-    <p>Focus the AutoComplete and type minimum 3 characters, e.g. "arm"</p>
     <kendo-autocomplete
       #autocomplete
       [data]="data"
