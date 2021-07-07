@@ -63,16 +63,17 @@ export class AppComponent {
     }
   }
   handleFilter(value) {
-    console.log(value);
-
-    this.data = this.source.filter(o =>
-      o.Name.toString()
-        .toLowerCase()
-        .includes(value.toString().toLowerCase())
+    this.data = this.source.filter(
+      o =>
+        o.Name.toString()
+          .toLowerCase()
+          .includes(value.toString().toLowerCase()) ||
+        o.GroupName.toString()
+          .toLowerCase()
+          .includes(value.toString().toLowerCase()) ||
+        o.MerchantName.toString()
+          .toLowerCase()
+          .includes(value.toString().toLowerCase())
     );
-    console.log(this.data);
-    // } else {
-    //   this.autocomplete.toggle(false);
-    // }
   }
 }
