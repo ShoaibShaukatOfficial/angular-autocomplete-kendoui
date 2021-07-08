@@ -35,8 +35,6 @@ import {
   `
 })
 export class AppComponent {
-  @ViewChild('autocomplete', { static: false })
-  public autocomplete: AutoCompleteComponent;
   public virtual: VirtualizationSettings = {
     itemHeight: 50,
     pageSize: 10
